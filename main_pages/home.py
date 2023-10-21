@@ -2,7 +2,7 @@
 import streamlit  as st
 from config import styleSettings
 from streamlit.components.v1 import html
-
+#git pull origin master --allow-unrelated-histories
 
 def homepages():
 
