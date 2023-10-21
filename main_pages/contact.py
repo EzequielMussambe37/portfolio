@@ -6,10 +6,10 @@ from config import styleSettings
 def contactpages():
 
     st.markdown(f"""
-                <h2 {styleSettings.titles()}>
+                <h2>
                 Contact
                 </h2>
-                <span {styleSettings.titles()}>
+                <span>
                 <ul style="list-style: none;">
                     <li><b>EMAIL:</b> Ezequielmussambe37@gmail.com</li>
                     <li><b>ROLE:</b> GIS Analysis/Developer</li>

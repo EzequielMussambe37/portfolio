@@ -15,11 +15,12 @@ class Profile:
         
         # with st.sidebar:
         #     st.write("hhhhh")
+       
         selected_menu = self.settings()
         print(selected_menu)
         self.pages(selected_menu)
         
-        st.markdown("""___""")
+       
         
     def settings(self):
         styleSettings.hideConfigOption()# need to be on the top

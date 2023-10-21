@@ -4,11 +4,13 @@ from streamlit_option_menu import option_menu
 def hideConfigOption():
 
     st.set_page_config(
-        page_title = "Main",
+        page_title = "Ezequiel",
+        
         layout="centered", 
     )
     
-    
+    with open("./css/shared.css") as f:
+        st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
     hide_style= """
     <style>
     #MainMenu {visibility:hidden}
@@ -52,7 +54,7 @@ def background_image():
       
          <style>
             [data-testid="stVerticalBlock"] {
-                background-color:rgba(255,255,255);
+                # background-color:rgba(255,255,255);
 
                 
                 
@@ -67,6 +69,7 @@ def background_image():
                object-fit: contain;
                border: 3px solid black;
                border-bottom-right-radius: 30%;
+               border-top-left-radius: 30%;
                background-color: #F2890C;
            }
              [data-testid="element_container"] {
