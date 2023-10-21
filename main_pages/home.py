@@ -28,8 +28,6 @@ def homepages():
         with column3:
             # st.markdown(""" div.stButton > button:first-child {
             #     background-color: #00cc00;color:white;}""", unsafe_allow_html=True)
-            
-            # st.button('CVS', on_click=hireMe)
             st.download_button(
                 label="DOWNLOAD CV",
                 data=pdfbyte,
