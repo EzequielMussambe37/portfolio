@@ -35,6 +35,7 @@ rpds-py==0.10.6
 six==1.16.0
 smmap==5.0.1
 streamlit==1.27.2
+streamlit-card==0.0.61
 streamlit-option-menu==0.3.6
 tenacity==8.2.3
 toml==0.10.2
