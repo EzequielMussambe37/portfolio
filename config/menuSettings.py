@@ -1,11 +1,11 @@
 from streamlit_option_menu import option_menu
 from config import styleSettings
-from main_pages import home,about,contact
+from main_pages import home,about,project
 
 def menu():
     menu_default = option_menu(
         menu_title = None,
-        options=["Home","About", "Contact","Project"],
+        options=["Home","About","Project"],
         icons=[" ","📊","📉","💻"],
         menu_icon = None,
         default_index=0,
@@ -18,6 +18,6 @@ def menu():
 
 def menu_optionFuc():
     
-    menu_options = {"Home":home.homepages,"About":about.aboutpages,"Contact":contact.contactpages}
+    menu_options = {"Home":home.homepages,"About":about.aboutpages,"Project":project.projectpages}
     
     return menu_options

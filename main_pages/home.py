@@ -9,16 +9,14 @@ from PIL import Image
 def homepages():
     
     
-    social = {"Facebook":"","Linkdin":"","Github":"","Instagram":""}
+    social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37?tab=repositories","Facebook":"https://www.facebook.com/ezequielchipilica.ezequiel/","Instagram":"https://www.instagram.com/ezequielchipilica/"}
     column1, column2 = st.columns(2,gap="large")
     with open("./css/EzequielMussambe'sResume.pdf","rb") as pdf_file:
         pdfbyte = pdf_file.read()
-        
-        
+
     with column1:
-        
-        
-        st.title("My name is Ezequiel Mussambe,")
+
+        st.title("My name is Ezequiel Mussambe,GIS Analysis/Developer")
         st.write("""I design, develop and maintain Geographic Information Systems(GIS) applications and solutions.
             """)
         
@@ -51,6 +49,8 @@ def homepages():
                 mime="application/octet-stream",
             )
             st.markdown(""":email:  [Email Address](ezequielmussambe37@gmail.com)""",unsafe_allow_html=True)
+            st.markdown("""	:telephone_receiver: +1517 455-3585""",unsafe_allow_html=True)
+        
         # with column4:
         #     st.button('SEE MY PROJECTS', on_click=projects,args=('https://github.com/EzequielMussambe37?tab=repositories',))
     with column2:
