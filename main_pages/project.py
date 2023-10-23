@@ -19,7 +19,7 @@ def projectpages():
 
 def project_1():
     
-    with open("./images/earthquake_nepal.jpg", "rb") as f:
+    with open("./assets/images/earthquake_nepal.jpg", "rb") as f:
         data = f.read()
         encoded = base64.b64encode(data)
         data = "data:image/png;base64," + encoded.decode("utf-8")
@@ -31,7 +31,7 @@ def project_1():
     
 def project_2():
     
-    with open("./images/super.jpg", "rb") as f:
+    with open("./assets/images/super.jpg", "rb") as f:
         data = f.read()
         encoded = base64.b64encode(data)
         data = "data:image/png;base64," + encoded.decode("utf-8")

@@ -9,7 +9,7 @@ def hideConfigOption():
         layout="centered", 
     )
     
-    with open("./css/shared.css") as f:
+    with open("./assets/styles/shared.css") as f:
         st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
     hide_style= """
     <style>

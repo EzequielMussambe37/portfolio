@@ -11,7 +11,7 @@ def homepages():
     
     social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37?tab=repositories","Facebook":"https://www.facebook.com/ezequielchipilica.ezequiel/","Instagram":"https://www.instagram.com/ezequielchipilica/"}
     column1, column2 = st.columns(2,gap="large")
-    with open("./css/EzequielMussambe'sResume.pdf","rb") as pdf_file:
+    with open("./assets/docs/EzequielMussambe'sResume.pdf","rb") as pdf_file:
         pdfbyte = pdf_file.read()
 
     with column1:
@@ -41,7 +41,7 @@ def homepages():
         #     and custom tools for solving real-world problems ,optimizing decisions for business,governments, 
         #     and organizations.</p>""",unsafe_allow_html=True)
         column3, column4 = st.columns([2,2],gap="small")
-        with column4:
+        with column3:
             st.download_button(
                 label="DOWNLOAD CV",
                 data=pdfbyte,
@@ -54,13 +54,21 @@ def homepages():
         # with column4:
         #     st.button('SEE MY PROJECTS', on_click=projects,args=('https://github.com/EzequielMussambe37?tab=repositories',))
     with column2:
-        st.image("./images/ezequiel.png")
+        st.image("./assets/images/ezequiel.png")
         
     st.markdown("""___""")   
     #st.write("##")
     cols = st.columns(len(social))
     for index, (media, link) in enumerate(social.items()):
         cols[index].write(f"[{media}]({link})")
+        
+        
+    st.markdown("___")
+    HtmlFile = open("./assets/cv.html", 'r', encoding='utf-8')
+    source_code = HtmlFile.read()
+    html(source_code)
+
+
 def projects(url):
     open_script= f"""
         <script type="text/javascript">
