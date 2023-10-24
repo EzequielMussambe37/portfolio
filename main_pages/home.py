@@ -68,6 +68,11 @@ def homepages():
     source_code = HtmlFile.read()
     html(source_code)
 
+    # columns1, columns2 = st.columns(2)
+    
+    # with columns1:
+    #     st.subheader("Experience")
+        
 
 def projects(url):
     open_script= f"""
