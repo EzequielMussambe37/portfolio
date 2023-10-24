@@ -32,6 +32,8 @@ def menuStyle():
             "icon":{"color":'black',"font-size":'23px'},
             "nav-link":{"color":'black',"font-size":'20px',"text-align":'left',"margin":'0px',"--hover-color":'lightgrey'},
             "nav-link-selected":{"background-color":'#F2890C'},},
+        
+
 
         ]  
     return style
@@ -72,6 +74,12 @@ def background_image():
                border-top-left-radius: 30%;
                background-color: #F2890C;
            }
+           
+           
+           
+        [data-testid="stHorizontalBlock"]:has(span.meu-container){
+            border: 1px solid grey;
+        }
              [data-testid="element_container"] {
                  
              }
