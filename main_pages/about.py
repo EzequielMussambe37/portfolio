@@ -5,7 +5,7 @@ from config import styleSettings
 def aboutpages():
     
     st.markdown(f"""
-            <h2>  Summary
+            <h2>  About me
             </h2>
         """,unsafe_allow_html=True)
     
