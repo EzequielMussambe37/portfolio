@@ -18,6 +18,6 @@ def menu():
 
 def menu_optionFuc():
     
-    menu_options = {"Home":home.homepages,"About":about.aboutpages,"Project":project.projectpages}
+    menu_options = {"Home":home.homepages,"About":about.aboutpages,"Project":project.dataProject}
     
     return menu_options

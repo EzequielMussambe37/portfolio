@@ -34,7 +34,7 @@ def aboutpages():
                     """,unsafe_allow_html=True)
         
     st.markdown("___")
-    st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experience</h4>""",unsafe_allow_html=True)
+    st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)
     st.markdown(f"#")
     
     with st.container():
@@ -73,8 +73,9 @@ def aboutpages():
     # st.markdown(f"""<p class="meu-container"></p>""",unsafe_allow_html=True)
     st.write("""
                 - ✔️ Geospatial Data Management
-                - ✔️ GIS Software Development
+                - ✔️ GIS Web Development
                 - ✔️ Spatial Data Analysis, 
                 - ✔️ Data Visualization, GIS integration, 
-                - ✔️ Geospatial Problem Solving
+                - ✔️ Geospatial Problem Solving,
+                - ✔️ Data Modeling
                  """)
