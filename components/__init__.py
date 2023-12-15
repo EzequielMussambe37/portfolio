@@ -1,4 +1,4 @@
-from plotly.graph_objects import Figure
+
 import streamlit.components.v1 as components
 
 _component_func = components.declare_component(
