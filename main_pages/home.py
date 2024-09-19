@@ -10,7 +10,7 @@ def homepages():
 
     social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37"}
     column1, column2 = st.columns(2,gap="large")
-    with open("./assets/docs/EzequielMussambe'sResume.pdf","rb") as pdf_file:
+    with open("./assets/docs/EzequielCV.pdf","rb") as pdf_file:
         pdfbyte = pdf_file.read()
 
     with column1:
@@ -20,7 +20,6 @@ def homepages():
                  I have worked on several data-driven and web application projects, 
                  developing APIs and responsive web applications that meet client requirements.
             """)
-        
         
         #  I leverage my expertise in spatial data analysis and programming to create a maps,application 
         #     and custom tools for solving real-world problems ,optimizing decisions for business,governments, 
@@ -65,28 +64,42 @@ def homepages():
 
     st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
     st.markdown(f"""
-
         ##### GIS Analyst and GIS Developer
-        Hydrosimulatics, Inc
-        2020-2023
-        * ✔️Process water wells data and classify lithologic materials (Boreholes lithology) using QGIS and Python 
-        * ✔️Calculate borehole thickness of lithologic materials using Python scripts\QGIS  
-        * ✔️Build a web mapping services web application to provide environmental georeferenced data around the world 
-        * ✔️Manipulate and extract web mapping service data (web map services, web feature services and web coverage 
-        services)
+        
+        Hydrosimulatics,2020-2023
+
+        Web Mapping Service Development
+        * ✅ Led the development of a cutting-edge web mapping environment platform designed to provide environmental
+        georeferenced data on a global scale. Utilized modern web technologies and GIS platforms and created an
+        intuitive and user-friendly interface for accessing worldwide environmental geospatial data and enhanced user
+        mapping and data visualization experience.
+        * ✅ Manipulated and extracted data from various web mapping services (WMS), web features services (WFS), and
+        web coverage services (WCS), and Web mapping tile services (WMTS) to support environmental and
+        hydrological internal projects.
+                
                 """)
-    
     st.markdown("""___""")
     st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
     st.markdown(f"""
         ##### Undergraduate GIS Research Assistant
-        Landscape Ecology & Ecosystem Science Lab
-        Summer 2019
-        * ✔️Processed and orthorectified Ortho mosaic sub-watershed historical imagery for Landuse/Landcover classification.
-        * ✔️Classified Landuse Landcover of  Kalamazoo Watershed by using eCognition
-        * ✔️Georeferenced and Converted historical images into grayscale( python, Irfan view and Geo Setter)
-        * ✔️Assisted in the maintenance of more than seven radiation towers in crops field to measure albedo and monitor crop health
-        * ✔️Collected data on the height of vegetation, leaf area index, soil moisture, and nitrogen of biofuel crops and measured soil moisture """)
+        Landscape Ecology & Ecosystem Science Lab, Summer 2019
+    
+        Data Processing and Classification
+        * ✅ Utilized Pix4D and ArcGIS software for processing and orthorectification of sub-watershed historical imagery to
+        use them for land use and land cover classification.
+        * ✅ Employed eCognition software for advanced land cover and land use classification, contributing valuable insights
+        to ecological research within the LEES Lab.
+        * ✅ Developed efficient workflow for image processing, ensuring consistent and reliable data transformation.
+        
+        Field Work
+        * ✅ Assisted in the maintenance and operation of over seven radiation towers in crop fields, measuring albedo and
+        monitoring crop health to gather critical data for ecological studies.
+        * ✅ Used GPS devices to conduct field surveys, identifying and collecting data from more than 30 plots within crop
+        fields
+        * ✅ Measured key parameters such as vegetation height, leaf area index, soil moisture, and nitrogen concentration
+        levels to understand the photosynthetic activity and soil moisture and properties. Collaborated with researchers
+        to interpret data and integrate findings into broader ecologic
+        """)
     
     
 
