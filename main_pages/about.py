@@ -34,38 +34,38 @@ def aboutpages():
                     """,unsafe_allow_html=True)
         
     st.markdown("___")
-    st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)
-    st.markdown(f"#")
+    # st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)
+    # st.markdown(f"#")
     
-    with st.container():
+    # with st.container():
         
-        column1, column2 = st.columns(2)
+    #     column1, column2 = st.columns(2)
         
-        with column1:
-            st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
-            st.markdown(f"""
+    #     with column1:
+    #         st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
+    #         st.markdown(f"""
 
-                ##### GIS Analyst and GIS Developer
+    #             ##### GIS Analyst and GIS Developer
         
-                Hydrosimulatics, Inc
-                2020-2023
-                * ✔️Process water wells data and classify lithologic materials (Boreholes lithology) using QGIS and Python 
-                * ✔️Calculate borehole thickness of lithologic materials using Python scripts\QGIS  
-                * ✔️Build a web mapping services web application to provide environmental georeferenced data around the world 
-                * ✔️Manipulate and extract web mapping service data (web map services, web feature services and web coverage 
-                services)
-                        """)
-        with column2:
-            st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
-            st.markdown(f"""
-                ##### Undergraduate GIS Research Assistant
-                Landscape Ecology & Ecosystem Science Lab
-                Summer 2019
-                * ✔️Processed and orthorectified Ortho mosaic sub-watershed historical imagery for Landuse/Landcover classification.
-                * ✔️Classified Landuse Landcover of  Kalamazoo Watershed by using eCognition
-                * ✔️Georeferenced and Converted historical images into grayscale( python, Irfan view and Geo Setter)
-                * ✔️Assisted in the maintenance of more than seven radiation towers in crops field to measure albedo and monitor crop health
-                * ✔️Collected data on the height of vegetation, leaf area index, soil moisture, and nitrogen of biofuel crops and measured soil moisture """)
+    #             Hydrosimulatics, Inc
+    #             2020-2023
+    #             * ✔️Process water wells data and classify lithologic materials (Boreholes lithology) using QGIS and Python 
+    #             * ✔️Calculate borehole thickness of lithologic materials using Python scripts\QGIS  
+    #             * ✔️Build a web mapping services web application to provide environmental georeferenced data around the world 
+    #             * ✔️Manipulate and extract web mapping service data (web map services, web feature services and web coverage 
+    #             services)
+    #                     """)
+    #     with column2:
+    #         st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
+    #         st.markdown(f"""
+    #             ##### Undergraduate GIS Research Assistant
+    #             Landscape Ecology & Ecosystem Science Lab
+    #             Summer 2019
+    #             * ✔️Processed and orthorectified Ortho mosaic sub-watershed historical imagery for Landuse/Landcover classification.
+    #             * ✔️Classified Landuse Landcover of  Kalamazoo Watershed by using eCognition
+    #             * ✔️Georeferenced and Converted historical images into grayscale( python, Irfan view and Geo Setter)
+    #             * ✔️Assisted in the maintenance of more than seven radiation towers in crops field to measure albedo and monitor crop health
+    #             * ✔️Collected data on the height of vegetation, leaf area index, soil moisture, and nitrogen of biofuel crops and measured soil moisture """)
             
         
     st.markdown("___")
