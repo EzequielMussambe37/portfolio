@@ -9,15 +9,17 @@ from PIL import Image
 def homepages():
     
     
-    social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37?tab=repositories","Facebook":"https://www.facebook.com/ezequielchipilica.ezequiel/","Instagram":"https://www.instagram.com/ezequielchipilica/"}
+    social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37?tab=repositories"}
     column1, column2 = st.columns(2,gap="large")
     with open("./assets/docs/EzequielMussambe'sResume.pdf","rb") as pdf_file:
         pdfbyte = pdf_file.read()
 
     with column1:
 
-        st.title("My name is Ezequiel Mussambe,GIS Analysis/Developer")
-        st.write("""I design, develop and maintain Geographic Information Systems(GIS) applications and solutions.
+        st.title("Ezequiel Mussambe")
+        st.write("""I am a data scientist with extensive experience in GIS analysis and GIS web development, gained through my education and work. 
+                 I have worked on several data-driven and web application projects, 
+                 developing APIs and responsive web applications that meet client requirements.
             """)
         
         
@@ -50,23 +52,22 @@ def homepages():
             )
             st.markdown(""":email:  [Email Address](ezequielmussambe37@gmail.com)""",unsafe_allow_html=True)
             st.markdown("""	:telephone_receiver: +1517 455-3585""",unsafe_allow_html=True)
-        
+
         # with column4:
         #     st.button('SEE MY PROJECTS', on_click=projects,args=('https://github.com/EzequielMussambe37?tab=repositories',))
     with column2:
         st.image("./assets/images/ezequiel.png")
-        
+
     st.markdown("""___""")   
     #st.write("##")
     cols = st.columns(len(social))
     for index, (media, link) in enumerate(social.items()):
         cols[index].write(f"[{media}]({link})")
-        
-        
+
     st.markdown("___")
-    HtmlFile = open("./assets/cv.html", 'r', encoding='utf-8')
-    source_code = HtmlFile.read()
-    html(source_code)
+    # HtmlFile = open("./assets/cv.html", 'r', encoding='utf-8')
+    # source_code = HtmlFile.read()
+    # html(source_code)
 
     # columns1, columns2 = st.columns(2)
     
