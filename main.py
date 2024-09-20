@@ -7,6 +7,7 @@ from main_pages import home
 
 
 
+
 class Profile:
     def __init__(self):
         self.name = "Ezequiel Mussambe"

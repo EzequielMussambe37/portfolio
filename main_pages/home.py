@@ -37,7 +37,7 @@ def homepages():
     st.markdown("""___""")
     st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)
 
-    st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
+    # st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
     st.markdown(f"""
         #### GIS Analyst and GIS Developer
         Hydrosimulatics, 2020-2023
@@ -53,7 +53,7 @@ def homepages():
         
         """)
     st.markdown("""___""")
-    st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
+    # st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
     st.markdown(f"""
         ##### Undergraduate GIS Research Assistant
         Landscape Ecology & Ecosystem Science Lab, Summer 2019

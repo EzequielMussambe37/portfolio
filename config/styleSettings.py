@@ -37,10 +37,11 @@ def menuStyle():
 
         ]  
     return style
-
+#  title = """ style= "padding:10px; color:black;" """
+    
 def titles():
     
-    title = """ style= "padding:10px; color:black;" """
+    title = """ style= "padding:0px; color:black;" """
     
     return title
 def background_image():
