@@ -5,9 +5,7 @@ from streamlit.components.v1 import html
 # from pathlib import Path
 from PIL import Image
 
-
 def homepages():
-
     social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37"}
     column1, column2 = st.columns(2,gap="large")
     with open("./assets/docs/EzequielCV.pdf","rb") as pdf_file:
@@ -20,26 +18,6 @@ def homepages():
                  I have worked on several data-driven and web application projects, 
                  developing APIs and responsive web applications that meet client requirements.
             """)
-        
-        #  I leverage my expertise in spatial data analysis and programming to create a maps,application 
-        #     and custom tools for solving real-world problems ,optimizing decisions for business,governments, 
-        #     and organizations.
-        
-        
-        
-        
-
-        # st.markdown(f"""
-        #     <h2 {styleSettings.titles()}> Hello,<br> My name is Ezequiel,<br> GIS Analyst and Developer
-        #     </h2>
-        # """,unsafe_allow_html=True)
-        
-        
-        # st.markdown(f"""
-        #     <p {styleSettings.titles()}> I design, develop and maintain Geographic Information Systems(GIS) applications and solutions.
-        #     I leverage my expertise in spatial data analysis and programming to create a maps,application 
-        #     and custom tools for solving real-world problems ,optimizing decisions for business,governments, 
-        #     and organizations.</p>""",unsafe_allow_html=True)
         column3, column4 = st.columns([2,2],gap="small")
         with column3:
             st.download_button(
@@ -53,9 +31,6 @@ def homepages():
         cols = st.columns(len(social))
         for index, (media, link) in enumerate(social.items()):
             cols[index].write(f"[{media}]({link})")
-        # st.markdown("___")
-        # with column4:
-        #     st.button('SEE MY PROJECTS', on_click=projects,args=('https://github.com/EzequielMussambe37?tab=repositories',))
     with column2:
         st.image("./assets/images/ezequiel.png")
 
@@ -64,9 +39,8 @@ def homepages():
 
     st.markdown(f"""<span class="meu-container"></span>""",unsafe_allow_html=True)
     st.markdown(f"""
-        ##### GIS Analyst and GIS Developer
-        
-        Hydrosimulatics,2020-2023
+        #### GIS Analyst and GIS Developer
+        Hydrosimulatics, 2020-2023
 
         Web Mapping Service Development
         * ✅ Led the development of a cutting-edge web mapping environment platform designed to provide environmental
@@ -76,8 +50,8 @@ def homepages():
         * ✅ Manipulated and extracted data from various web mapping services (WMS), web features services (WFS), and
         web coverage services (WCS), and Web mapping tile services (WMTS) to support environmental and
         hydrological internal projects.
-                
-                """)
+        
+        """)
     st.markdown("""___""")
     st.markdown(f"""<spans class="meu-container"></spans>""",unsafe_allow_html=True) # trick and tips to make the boarder...
     st.markdown(f"""
