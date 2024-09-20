@@ -30,10 +30,11 @@ def homepages():
             # st.markdown(f"""<a href={email}>:email: Email Adress</a>""",unsafe_allow_html=True)
             st.markdown(""":email:  [Email Address](mailto:ezequielmussambe37@gmail.com)""",unsafe_allow_html=True)
             st.markdown(""":telephone_receiver: [1517 455-3585](tel:+15174553585)""",unsafe_allow_html=True)
-        st.markdown("""___""")
+        
         cols = st.columns(len(social))
         for index, (media, link) in enumerate(social.items()):
             cols[index].write(f"[{media}]({link})")
+    # st.markdown("""___""")
     with column2:
         st.image("./assets/images/ezequiel.png")
 
