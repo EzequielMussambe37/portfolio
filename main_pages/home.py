@@ -32,7 +32,7 @@ def homepages():
         for index, (media, link) in enumerate(social.items()):
             cols[index].write(f"[{media}]({link})")
     with column2:
-        st.image("./assets/images/ezequiel.png",width=250)
+        st.image("./assets/images/ezequiel.png")
 
     st.markdown("""___""")
     st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)

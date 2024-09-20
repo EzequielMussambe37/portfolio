@@ -51,7 +51,7 @@ def background_image():
                 background-image: url("https://github.com/EzequielMussambe37/backgroundImage/blob/main/background.jpg?raw=true");
                 background-size: cover;
                 }
-        </>
+        </style>
         """
     element_container ="""
       
@@ -63,6 +63,10 @@ def background_image():
                 
                 }
                 
+             button[title="View fullscreen"] {
+        display: none;
+    }
+
             [data-testid="stHorizontalBlock"] {
                 padding:0px;
                 margin:0px;
