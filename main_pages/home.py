@@ -4,10 +4,10 @@ from config import styleSettings
 from streamlit.components.v1 import html
 # from pathlib import Path
 from PIL import Image
-
+# gap="small"
 def homepages():
     social = {"Linkedin":"https://www.linkedin.com/in/ezequiel-mussambe-089b51127/","Github":"https://github.com/EzequielMussambe37"}
-    column1, column2 = st.columns(2,gap="large")
+    column1, column2 = st.columns(2)
     with open("./assets/docs/EzequielCV.pdf","rb") as pdf_file:
         pdfbyte = pdf_file.read()
 
@@ -32,7 +32,7 @@ def homepages():
         for index, (media, link) in enumerate(social.items()):
             cols[index].write(f"[{media}]({link})")
     with column2:
-        st.image("./assets/images/ezequiel.png")
+        st.image("./assets/images/ezequiel.png",width=250)
 
     st.markdown("""___""")
     st.markdown(f"""<h4 style="text-align:center;">Most Recent Work Experiences</h4>""",unsafe_allow_html=True)
