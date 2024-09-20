@@ -2,6 +2,7 @@
 import streamlit  as st
 from config import styleSettings
 from streamlit.components.v1 import html
+from st_social_media_links import SocialMediaIcons
 # from pathlib import Path
 from PIL import Image
 # gap="small"
@@ -29,11 +30,22 @@ def homepages():
             # email = "mailto:ezequielmussambe37@gmail.com"
             # st.markdown(f"""<a href={email}>:email: Email Adress</a>""",unsafe_allow_html=True)
             st.markdown(""":email:  [Email Address](mailto:ezequielmussambe37@gmail.com)""",unsafe_allow_html=True)
-            st.markdown(""":telephone_receiver: [1517 455-3585](tel:+15174553585)""",unsafe_allow_html=True)
-        
-        cols = st.columns(len(social))
-        for index, (media, link) in enumerate(social.items()):
-            cols[index].write(f"[{media}]({link})")
+            st.markdown(""":telephone_receiver: [517 455-3585](tel:+15174553585)""",unsafe_allow_html=True)
+            #cols = st.columns(len(social))
+            # for index, (media, link) in enumerate(social.items()):
+            #     media_icons = SocialMediaIcons([link])
+            #     media_icons.render()
+            media_icons = SocialMediaIcons(list(social.values()))
+            st.markdown(f"""{media_icons.render()}""",unsafe_allow_html=True)
+        # for index, (media, link) in enumerate(social.items()):
+        #     media_icons = SocialMediaIcons([link])
+        #     media_icons.render()
+            # with cols[index]:
+            #     media_icons = SocialMediaIcons([link])
+            #     media_icons.render()
+            # media_icons = SocialMediaIcons([link])
+            #     
+            # cols[index].markdown(f"[{media}]({media_icons.render()})")
     # st.markdown("""___""")
     with column2:
         st.image("./assets/images/ezequiel.png")
