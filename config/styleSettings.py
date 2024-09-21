@@ -13,11 +13,11 @@ def hideConfigOption():
         st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
     hide_style= """
     <style>
-    #MainMenu {visibility:hidden}
-    header {visibility:hidden}
-    footer {visibility:hidden}
-    nav {visibility:hidden}
-
+    #MainMenu {visibility:hidden;}
+    header {visibility:hidden;}
+    footer {visibility:hidden !important;}
+    nav {visibility:hidden;}
+    [data-testid="stToolbar"] {visibility:hidden !important;}
      .block-container {
                     padding-top: 2rem;
                     padding-bottom: 0rem;
